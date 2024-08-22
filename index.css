@@ -210,6 +210,7 @@ nav ul li a:hover {
 #training {
     text-align: center; /* Centers the heading and content horizontally */
     padding: 5px; /* Adds some space around the section */
+    position: relative;
 }
 
 #training h2 {
@@ -217,12 +218,12 @@ nav ul li a:hover {
 }
 
 .training-box {
-    position: relative;
-    background: url('src/Tattoo-artist-1024x684.jpg') no-repeat center center fixed;
-    display: inline-block; /* Allows the box to fit around its content */
-    width: 1400px; /* 5 times the initial 300px width */
-    height: 400px; /* 5 times the initial 200px height */
-    background-color: #cecaca;
+    position: relative ;
+    background: url('src/Tattoo-artist-1024x684.jpg') no-repeat center fixed;
+    display: flex; /* Allows the box to fit around its content */
+    width: 100%; /* 5 times the initial 300px width */
+    height: 500px; /* 5 times the initial 200px height */
+    /* background-color: #cecaca; */
   
     border-radius: 10px; /* Optional: adds rounded corners */
     padding: 20px; /* Optional: adds space inside the box */
@@ -284,6 +285,26 @@ nav ul li a:hover {
     font-style: italic; /* Italicize text for a stylish look */
 }
 
+/* visit us */
+#visit-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+  
+  .visit-info h3 {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .visit-info p {
+    margin: 5px 0;
+  }
+  
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
 
 .visit-button {
     display: inline-block;
@@ -312,14 +333,16 @@ nav ul li a:hover {
 }
 
 .top-right {
-    top: 20px; /* 20px from the top of the training-box */
-    right: 20px; /* 20px from the right of the training-box */
+    top: 10px; /* 20px from the top of the training-box */
+    right: 10px; /* 20px from the right of the training-box */
+    position: relative;
 
 }
 
 .bottom-left {
     bottom: 20px; /* 20px from the bottom of the training-box */
     left: 20px; /* 20px from the left of the training-box */
+    position: fixed;
 }
 
 
