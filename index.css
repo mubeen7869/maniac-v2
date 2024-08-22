@@ -1,0 +1,464 @@
+/* styles.css */
+
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, a, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url('src/maniac\ logo.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the image covers the whole page */
+}
+
+/* Header and navigation */
+header {
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.locate-us {
+    margin-left: auto; /* Push "Locate Us" to the far right */
+}
+
+.locate-us a {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for the white box */
+    background-color: white; /* White background for the box */
+    color: black; /* Black text color */
+    border: 2px solid black; /* Border around the white box */
+    border-radius: 4px; /* Rounded corners for the box */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+.locate-us a:hover {
+    background-color: black; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Social Buttons Styles */
+.social-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Space between "Locate Us" and social buttons */
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin-left: 15px; /* Space between buttons */
+}
+
+.social-buttons img {
+    width: 40px; /* Increase size of icons */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align icons vertically */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-buttons img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+/* Hero section */
+#hero {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem; /* Adjust size as needed */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* About section */
+#about {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+}
+
+/* Services section */
+#services {
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service-item {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.service-item h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* Gallery section */
+#gallery {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fdfbfb;
+    
+    padding: 2rem 1rem;
+    background: rgba(14, 14, 14, 0.9); /* Slightly transparent background */
+    text-align: center; /* Center the heading text */
+}
+
+
+
+#gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    gap: 2rem; /* Space between grid items */
+    max-width: 1200px; /* Optional: Set a max width for better control */
+    margin: 0 auto; /* Center the grid container */
+}
+
+/* General image styling and centering */
+.gallery-images img {
+    width: 50%; /* Reduce image size to 50% of its container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Rounded corners */
+    display: block; /* Ensure images are block-level for proper centering */
+    margin: 0 auto; /* Center images horizontally within their grid cell */
+}
+
+/* Place first and second images in the first row */
+.gallery-images img:nth-child(1) {
+    grid-column: 1; /* First column */
+}
+
+.gallery-images img:nth-child(2) {
+    grid-column: 2; /* Second column */
+}
+
+/* Place third and fourth images in the second row */
+.gallery-images img:nth-child(3) {
+    grid-column: 1; /* First column */
+    grid-row: 2; /* Second row */
+}
+
+.gallery-images img:nth-child(4) {
+    grid-column: 2; /* Second column */
+    grid-row: 2; /* Second row */
+}
+
+
+#white-section {
+    background-color: white; /* White background for the section */
+    padding: 20px; /* Add padding inside the section */
+    margin-top: 20px; /* Add space between the gallery and this section */
+}
+
+#training {
+    text-align: center; /* Centers the heading and content horizontally */
+    padding: 5px; /* Adds some space around the section */
+}
+
+#training h2 {
+    margin-bottom: 20px; /* Space between the heading and the training box */
+}
+
+.training-box {
+    position: relative;
+    background: url('src/Tattoo-artist-1024x684.jpg') no-repeat center center fixed;
+    display: inline-block; /* Allows the box to fit around its content */
+    width: 1400px; /* 5 times the initial 300px width */
+    height: 400px; /* 5 times the initial 200px height */
+    background-color: #cecaca;
+  
+    border-radius: 10px; /* Optional: adds rounded corners */
+    padding: 20px; /* Optional: adds space inside the box */
+}
+
+.white-box {
+    position: absolute;
+    top: 20px; /* 20px from the top of the training-box */
+    left: 20px; /* 20px from the left of the training-box */
+    width: 600px; /* Half the width of the training box */
+    height: 300px; /* Half the height of the training box */
+    background-color: rgb(66, 61, 61); /* White background for the box */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    padding: 20px; /* Adds padding inside the white box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+    text-align: center; /* Centers text and button */
+    color: black; /* Sets text color to black */
+}
+
+.white-box h3 {
+    margin-top: 0; /* Removes the top margin of the heading */
+    font-size: 24px; /* Adjusted font size */
+}
+
+.white-box p {
+    font-size: 16px; /* Adjusted font size */
+}
+
+/* Content Box Styles */
+.content-box {
+    position: absolute; 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    max-width: 38%; /* Reduced to fit better */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    border: 5px double #464545; /* Black double border */
+}
+
+/* Heading Styles */
+.content-box h3 {
+    color: #ffffff; /* Black color for the heading */
+    font-size: 28px; /* Font size for the heading */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 15px; /* Space below the heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Light shadow for better readability */
+    line-height: 1.3; /* Line height for better spacing */
+}
+
+/* Paragraph Styles */
+.content-box p {
+    color: #ffffff; /* Dark gray color for the paragraph text */
+    font-size: 18px; /* Font size for the paragraph */
+    margin-bottom: 20px; /* Space below the paragraph */
+    line-height: 1.6; /* Line height for better readability */
+    font-style: italic; /* Italicize text for a stylish look */
+}
+
+
+.visit-button {
+    display: inline-block;
+    background: #007bff; /* Blue background */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px; /* Spacing above the button */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.visit-button:hover {
+    background: #0056b3; /* Darker blue for hover effect */
+}
+
+.training-box img {
+    position: absolute;
+    width: 400px; /* Size of the images */
+    height: 400px; /* Size of the images */
+    object-fit: cover; /* Ensures images maintain their aspect ratio */
+    
+}
+
+.top-right {
+    top: 20px; /* 20px from the top of the training-box */
+    right: 20px; /* 20px from the right of the training-box */
+
+}
+
+.bottom-left {
+    bottom: 20px; /* 20px from the bottom of the training-box */
+    left: 20px; /* 20px from the left of the training-box */
+}
+
+
+
+/* Contact section */
+#contact {
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    color: #090909;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.75rem;
+    background: #e8491d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #d73a1f;
+}
+
+/* Footer section */
+footer {
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Base styles (for mobile first approach) */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header {
+    padding: 10px;
+    color: #fff;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .locate-us, .social-buttons {
+        display: block;
+    }
+}
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    .locate-us {
+        margin-left: auto;
+    }
+
+    .social-buttons {
+        margin-left: auto;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-size: 1rem; /* Base font size */
+}
+
+h1 {
+    font-size: 2rem; /* Scales with body font size */
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1.125rem;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Optional: Limits maximum width */
+    margin: 0 auto; /* Centers container */
+    padding: 0 15px;
+}
+
+
+
